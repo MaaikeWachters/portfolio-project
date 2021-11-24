@@ -1,7 +1,41 @@
-h1 {
-  font-family: "Montserrat", sans-serif;
+:root {
+  --primary-color: #197278;
+  --text-color: #283D3B;
+  --text-font-family: "Montserrat", sans-serif;
+  --header-font-family: "Oldenburg", cursive;
 }
 
-p {
-  font-family: "Oldenburg", cursive;
+h1 {
+  font-family: var(--header-font-family);
+}
+
+ul {
+  font-family: var(--text-font-family);
+  opacity: 75%;
+  padding-left: 0;
+}
+
+.bold {
+  font-weight: bold;
+  opacity: 100%;
+}
+
+.hero {
+  color: white;
+  padding: 150px;
+}
+
+li {
+  list-style-type: none;
+  
+}
+
+.hero img {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.container-fluid {
+    background-color: var(--primary-color);
+    
 }
