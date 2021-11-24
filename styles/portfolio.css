@@ -1,8 +1,12 @@
 :root {
   --primary-color: #197278;
-  --text-color: #283D3B;
+  --text-color: #283d3b;
   --text-font-family: "Montserrat", sans-serif;
   --header-font-family: "Oldenburg", cursive;
+}
+
+body {
+  background-color: var(--primary-color);
 }
 
 h1 {
@@ -27,15 +31,14 @@ ul {
 
 li {
   list-style-type: none;
-  
 }
 
 .hero img {
   border: 3px solid white;
   border-radius: 50%;
+  max-height: 175px;
 }
 
 .container-fluid {
-    background-color: var(--primary-color);
-    
+  max-width: 1000px;
 }
