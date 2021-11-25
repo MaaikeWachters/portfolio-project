@@ -13,7 +13,9 @@ body {
 h1 {
   font-family: var(--header-font-family);
   font-size: 48px;
+  color: var(--text-color);
 }
+
 li {
   font-family: var(--header-font-family);
   font-size: 20px;
@@ -96,29 +98,29 @@ a:hover {
   border-color: var(--text-color);
 }
 
-.about-description {
+.content {
   margin: 24px;
   text-align: center;
 }
 
-.about-description h1 {
-  color: var(--text-color);
+.content h1 {
   font-size: 40px;
   padding-bottom: 16px;
 }
 
-.about-description h2 {
+.content h2 {
   font-size: 20px;
   font-family: var(--text-font-family);
 }
 
-.about-description p {
+.content p {
   font-size: 16px;
 }
 
 @media (max-width: 900px) {
   h1 {
     font-size: 32px;
+    text-align: center;
   }
 
   h2 {
