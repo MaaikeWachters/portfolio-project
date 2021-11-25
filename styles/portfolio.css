@@ -44,6 +44,15 @@ h3 {
   padding-bottom: 16px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
 .project {
   margin-top: 72px;
 }
@@ -78,16 +87,36 @@ h3 {
 
 .btn-outline-primary {
   border-color: var(--text-color);
-  color: var(--text-color);
   font-family: var(--text-font-family);
+  color: var(--text-color);
 }
+
 .btn-outline-primary:hover {
   background-color: var(--hover-color);
   border-color: var(--text-color);
 }
 
+.about-description {
+  margin: 24px;
+  text-align: center;
+}
+
+.about-description h1 {
+  color: var(--text-color);
+  font-size: 40px;
+  padding-bottom: 16px;
+}
+
+.about-description h2 {
+  font-size: 20px;
+  font-family: var(--text-font-family);
+}
+
+.about-description p {
+  font-size: 16px;
+}
+
 @media (max-width: 900px) {
-  
   h1 {
     font-size: 32px;
   }
@@ -101,6 +130,10 @@ h3 {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 8px;
+  }
+
+  p {
+    padding-top: 16px;
   }
 
   .hero {
