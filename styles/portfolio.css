@@ -117,6 +117,31 @@ a:hover {
   font-size: 16px;
 }
 
+nav li {
+  display: inline;
+  padding: 20px;
+}
+
+.logo,
+.logo-small {
+  color: var(--text-color);
+  font-family: var(--header-font-family);
+  font-size: 24px;
+}
+
+.container {
+  margin: 0;
+  max-width: 100%;
+}
+
+.link-active {
+  color: var(--hover-color);
+}
+
+.fa-chevron-down {
+  font-size: 32px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 32px;
@@ -157,5 +182,10 @@ a:hover {
 
   .container-fluid {
     margin-bottom: 64px;
+  }
+
+  nav li {
+    padding: 4px;
+    font-size: 12px;
   }
 }
