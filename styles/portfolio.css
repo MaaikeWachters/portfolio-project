@@ -1,5 +1,6 @@
 :root {
   --primary-color: #197278;
+  --secondary-color: #283d3b;
   --hover-color: #283d3b;
   --text-color: white;
   --text-font-family: "Montserrat", sans-serif;
@@ -46,6 +47,12 @@ h3 {
   padding-bottom: 16px;
 }
 
+h4 {
+  color: var(--text-color);
+  font-family: var(--header-font-family);
+  font-size: 24px;
+}
+
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -53,6 +60,7 @@ a {
 
 a:hover {
   color: var(--text-color);
+  transition: all 100ms ease-in-out;
 }
 
 .project {
@@ -96,6 +104,7 @@ a:hover {
 .btn-outline-primary:hover {
   background-color: var(--hover-color);
   border-color: var(--text-color);
+  transition: all 100ms ease-in-out;
 }
 
 .content {
@@ -140,6 +149,43 @@ nav li {
 
 .fa-chevron-down {
   font-size: 32px;
+}
+
+footer {
+  font-size: 24px;
+  margin: 150px;
+}
+
+footer a:hover {
+  color: var(--hover-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links {
+  padding-top: 24px;
+}
+
+footer .social-links a {
+  padding: 10px 14px;
+  margin: 16px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+footer .social-links a:hover {
+  color: var(--text-color);
+  background-color: var(--hover-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+}
+
+footer .contact-box p {
+  font-size: 16px;
 }
 
 @media (max-width: 900px) {
@@ -187,5 +233,26 @@ nav li {
   nav li {
     padding: 4px;
     font-size: 12px;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  footer .email-link {
+    font-size: 20px;
+  }
+
+  footer .social-links {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer .social-links a {
+    padding: 5px 10px;
+    margin: 4px;
+    font-size: 16px;
   }
 }
