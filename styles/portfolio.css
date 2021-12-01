@@ -165,6 +165,10 @@ footer .social-links {
   padding-top: 24px;
 }
 
+footer .email-link {
+  font-family: var(--text-font-family);
+}
+
 footer .social-links a {
   padding: 10px 14px;
   margin: 16px;
@@ -186,6 +190,17 @@ footer .contact-box {
 
 footer .contact-box p {
   font-size: 16px;
+}
+
+.coding-credit {
+  color: var(--text-color);
+  font-size: 12px;
+  font-family: var(--text-font-family);
+}
+
+.coding-credit a {
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
 @media (max-width: 900px) {
