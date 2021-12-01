@@ -9,12 +9,13 @@
 
 body {
   background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: var(--text-font-family);
 }
 
 h1 {
   font-family: var(--header-font-family);
   font-size: 48px;
-  color: var(--text-color);
 }
 
 li {
@@ -32,8 +33,6 @@ ul {
 p,
 h2,
 h3 {
-  font-family: var(--text-font-family);
-  color: var(--text-color);
   text-align: center;
 }
 
@@ -48,7 +47,6 @@ h3 {
 }
 
 h4 {
-  color: var(--text-color);
   font-family: var(--header-font-family);
   font-size: 24px;
 }
@@ -59,7 +57,62 @@ a {
 }
 
 a:hover {
-  color: var(--text-color);
+  color: var(--hover-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer {
+  font-size: 24px;
+  margin: 150px;
+}
+
+footer a:hover {
+  color: var(--hover-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links {
+  padding-top: 24px;
+}
+
+footer .social-links a {
+  padding: 10px 14px;
+  margin: 16px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+}
+
+footer .social-links a:hover {
+  background-color: var(--hover-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+}
+
+footer .contact-box p {
+  font-size: 16px;
+}
+
+nav li {
+  display: inline;
+  padding: 20px;
+}
+
+.fab {
+  color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+  border-color: var(--text-color);
   transition: all 100ms ease-in-out;
 }
 
@@ -74,7 +127,6 @@ a:hover {
 }
 
 .hero {
-  color: var(--text-color);
   padding-top: 150px;
   padding-bottom: 120px;
 }
@@ -95,18 +147,6 @@ a:hover {
   max-height: 250px;
 }
 
-.btn-outline-primary {
-  border-color: var(--text-color);
-  font-family: var(--text-font-family);
-  color: var(--text-color);
-}
-
-.btn-outline-primary:hover {
-  background-color: var(--hover-color);
-  border-color: var(--text-color);
-  transition: all 100ms ease-in-out;
-}
-
 .content {
   margin: 24px;
   text-align: center;
@@ -119,21 +159,14 @@ a:hover {
 
 .content h2 {
   font-size: 20px;
-  font-family: var(--text-font-family);
 }
 
 .content p {
   font-size: 16px;
 }
 
-nav li {
-  display: inline;
-  padding: 20px;
-}
-
 .logo,
 .logo-small {
-  color: var(--text-color);
   font-family: var(--header-font-family);
   font-size: 24px;
 }
@@ -151,51 +184,8 @@ nav li {
   font-size: 32px;
 }
 
-footer {
-  font-size: 24px;
-  margin: 150px;
-}
-
-footer a:hover {
-  color: var(--hover-color);
-  transition: all 100ms ease-in-out;
-}
-
-footer .social-links {
-  padding-top: 24px;
-}
-
-footer .email-link {
-  font-family: var(--text-font-family);
-}
-
-footer .social-links a {
-  padding: 10px 14px;
-  margin: 16px;
-  border-radius: 50%;
-  background-color: var(--text-color);
-  color: var(--primary-color);
-}
-
-footer .social-links a:hover {
-  color: var(--text-color);
-  background-color: var(--hover-color);
-  transition: all 100ms ease-in-out;
-}
-
-footer .contact-box {
-  background-color: var(--secondary-color);
-  border-radius: 16px;
-}
-
-footer .contact-box p {
-  font-size: 16px;
-}
-
 .coding-credit {
-  color: var(--text-color);
   font-size: 12px;
-  font-family: var(--text-font-family);
 }
 
 .coding-credit a {
@@ -223,28 +213,6 @@ footer .contact-box p {
   p {
     padding-top: 16px;
   }
-
-  .hero {
-    padding-top: 60px;
-    padding-bottom: 24px;
-  }
-
-  .bold {
-    font-size: 20px;
-  }
-
-  .hero img {
-    margin-bottom: 16px;
-  }
-
-  .project {
-    margin-top: 40px;
-  }
-
-  .container-fluid {
-    margin-bottom: 64px;
-  }
-
   nav li {
     padding: 4px;
     font-size: 12px;
@@ -269,5 +237,25 @@ footer .contact-box p {
     padding: 5px 10px;
     margin: 4px;
     font-size: 16px;
+  }
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 24px;
+  }
+
+  .bold {
+    font-size: 20px;
+  }
+
+  .hero img {
+    margin-bottom: 16px;
+  }
+
+  .project {
+    margin-top: 40px;
+  }
+
+  .container-fluid {
+    margin-bottom: 64px;
   }
 }
