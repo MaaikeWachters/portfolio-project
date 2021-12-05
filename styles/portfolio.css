@@ -186,6 +186,7 @@ nav li {
 
 .coding-credit {
   font-size: 12px;
+  margin-bottom: 32px;
 }
 
 .coding-credit a {
@@ -213,6 +214,7 @@ nav li {
   p {
     padding-top: 16px;
   }
+
   nav li {
     padding: 4px;
     font-size: 12px;
@@ -230,7 +232,7 @@ nav li {
     padding-top: 10px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   footer .social-links a {
